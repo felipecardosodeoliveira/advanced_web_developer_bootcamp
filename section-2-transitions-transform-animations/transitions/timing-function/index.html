@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transition Time Function</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .box {
+            border-radius: 10px;
+            background: rgb(9, 48, 121);
+            color: white;
+            display: inline-block;
+            font-size: 13px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100px;
+        }
+
+        .animated {
+            transition-property: transform;
+            transition-duration: 2s;
+            transition-timing-function: steps(4, end);
+        }
+
+        .box:hover {
+            transform: translateX(300px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- what's the "acceleration curve" for the transition -->
+    <!-- transition-timing-function: ease-in -->
+    <!-- transition-timing-function: ease-out -->
+    <!-- transition-timing-function: linear -->
+    <!-- And even... -->
+    <!-- transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035)-->
+
+    <p class="box">
+        BORING
+    </p>
+    <div></div>
+    <p class="box animated">
+        animated
+    </p>
+
+</body>
+
+</html>
