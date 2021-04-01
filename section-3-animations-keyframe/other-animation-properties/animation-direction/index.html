@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Animation Directions</title>
+    <style>
+        .box {
+            background-color: teal;
+            color: white;
+            font-size: 16px;
+            font-family: 'Courier New', Courier, monospace;
+            height: 100px;
+            line-height: 100px;
+            text-transform: uppercase;
+            text-align: center;
+            width: 100px;
+
+            animation-name: slideRight;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 0;
+            animation-duration: 2s;
+        }
+
+        .alternate {
+            animation-direction: alternate;
+        }
+
+        .reverse {
+            animation-direction: reverse;
+        }
+
+        @keyframes slideRight {
+            100% {
+                transform: translateX(300px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+            animation-mation: forward;
+            animation-direction: reverse;
+            animation-direction: alternate;
+         -->
+
+    <p class="box">
+        forward
+    </p>
+
+    <p class="box reverse">
+        reverse
+    </p>
+
+    <p class="box alternate">
+        alternate
+    </p>
+
+</body>
+
+</html>

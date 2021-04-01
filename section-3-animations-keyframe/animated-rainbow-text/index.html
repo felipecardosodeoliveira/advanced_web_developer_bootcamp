@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Rainbow Text</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        h1 {
+            animation-name: rainbowtext;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rainbowtext {
+            0% {
+                color: red;
+                font-size: 40px;
+            }
+
+            25% {
+                color: orange;
+            }
+
+            50% {
+                color: yellow;
+                font-size: 60px;
+            }
+
+            75% {
+                color: green;
+            }
+
+            100% {
+                color: blue;
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Hello!</h1>
+</body>
+
+</html>

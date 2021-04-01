@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Animation fill mode</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            padding: 30px;
+        }
+
+        .box {
+            background-color: lightgreen;
+            color: rgb(13, 71, 13);
+            font-size: 30px;
+            padding: 20px;
+            text-align: center;
+
+            animation-name: changeColor;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 0;
+            animation-duration: 2s;
+        }
+
+        .forwards {
+            animation-fill-mode: forwards;
+        }
+
+        .backwards {
+            animation-fill-mode: backwards;
+        }
+
+        .both {
+            animation-fill-mode: both;
+        }
+
+        @keyframes changeColor {
+            0% {
+                background-color: #f1c40f;
+            }
+
+            100% {
+                background-color: #e74c3c;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        Specifies how an animation should apply 
+        styles before and atfter the animation
+     -->
+    <p class="box">None</p>
+    <p class="box forwards">Forwards - stays red at end</p>
+    <p class="box backwards">Backwards - turns yellow immediatley</p>
+    <p class="box both">BOTH - turns yellow immediately and stays red at end</p>
+</body>
+
+</html>

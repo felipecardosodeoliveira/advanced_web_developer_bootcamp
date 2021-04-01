@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Other css Animation Properties</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: rgb(57, 57, 59);
+            text-align: center;
+        }
+
+        .btn {
+            border-radius: 4px;
+            background-color: rgb(19, 168, 179);
+            color: white;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 50px;
+            letter-spacing: 2px;
+            padding: 15px 25px;
+            text-decoration: none;
+        }
+
+        .anim {
+            animation-name: jinggle;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 3;
+        }
+
+        @keyframes jinggle {
+
+            48%,
+            62% {
+                transform: scale(1.0, 1.0);
+            }
+
+            50% {
+                transform: scale(1.1, 0.9);
+            }
+
+            56% {
+                transform: scale(0.9, 1.1) translate(0, -5px);
+            }
+
+            59% {
+                transform: scale(1.0, 1.0) translate(0, -3px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>
+        <a href="#" class="btn anim">I Jinggle</a>
+    </p>
+
+</body>
+
+</html>
