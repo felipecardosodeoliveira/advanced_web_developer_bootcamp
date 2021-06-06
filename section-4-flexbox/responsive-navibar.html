@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200">
+    <title>Responsive Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        a {
+            border-bottom: 1px solid #41cee7;
+            color: #95a5a6;
+            font-size: 30px;
+            font-family: raleway;
+            margin: 20px;
+            text-decoration: none;
+            transition: color 0.5s ease-in-out;
+        }
+
+        a:hover {
+            color: #3498db;
+            border-color: #3498db;
+        }
+
+        i {
+            margin-right: 10px;
+        }
+
+        @media screen and (max-width: 920px) {
+            nav {
+                justify-content: space-around;
+            }
+
+            a{
+                font-size: 26px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            nav{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href=""><i class="fa fa-home"></i>Home</a>
+        <a href=""><i class="fa fa-question"></i>About</a>
+        <a href=""><i class="fa fa-phone"></i>Contact</a>
+        <a href=""><i class="fa fa-paw"></i>Dogs</a>
+      </nav>      
+</body>
+</html>
